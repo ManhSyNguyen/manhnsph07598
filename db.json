@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "id": "tdwimzzil",
+      "name": "Nike Air Force 1",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "e939q2hec",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faf12.jpg?alt=media&token=7c20044b-2501-417b-bec8-838f734fbad7",
+      "regularprice": "1500000",
+      "saleprice": "2699000",
+      "desc": "The legend lives on in the Nike Air Force 1 Craft&mdash;a modern take on the iconic AF-1 with new details like fresh graphics on the tongue and heel. Crisp leather, brushed suede and exposed stitching on the upper add texture and depth while the new plush liner feels soft and comfortable. Its redesigned shape returns to OG roots, adding heritage style."
+    },
+    {
+      "id": "fu77yg5tn",
+      "name": "Nike Air Force 1 Type 2",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "e939q2hec",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faf14.jpg?alt=media&token=ec27c1ee-aafa-4ec3-905d-a6c2a3b465ef",
+      "regularprice": "2500000",
+      "saleprice": "3699000",
+      "desc": "The legend lives on in the Nike Air Force 1 Type 2 Craft&mdash;a modern take on the iconic AF-1 with new details like fresh graphics on the tongue and heel. Crisp leather, brushed suede and exposed stitching on the upper add texture and depth while the new plush liner feels soft and comfortable. Its redesigned shape returns to OG roots, adding heritage style."
+    },
+    {
+      "id": "yqa583yxt",
+      "name": "Nike Air Force 107",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "e939q2hec",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faf107.jpg?alt=media&token=02049ba6-2f09-478d-aa51-54fa7e65b7d1",
+      "regularprice": "1000000",
+      "saleprice": "2399000",
+      "desc": "The legend lives on in the Nike Air Force 1 Craft&mdash;a modern take on the iconic AF-1 with new details like fresh graphics on the tongue and heel. Crisp leather, brushed suede and exposed stitching on the upper add texture and depth while the new plush liner feels soft and comfortable. Its redesigned shape returns to OG roots, adding heritage style."
+    },
+    {
+      "id": "bjsh8i8x0",
+      "name": "Jordan 3 Animal Instinc",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "5h0nd035f",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faj3.jpg?alt=media&token=ba963410-9c8d-4253-9f0a-65dddfc62d24",
+      "regularprice": "3000000",
+      "saleprice": "4699000",
+      "desc": "The Air Jordan 1 Red Mid brings full-court style and premium comfort to an iconic look. Its Air-Sole unit cushions play on the hardwood, while the padded collar gives you a supportive feel."
+    },
+    {
+      "id": "my65jei53",
+      "name": "Jordan 4 x Off White Sail",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "5h0nd035f",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faj4.jpg?alt=media&token=eae50ae6-3344-4ed4-8e51-81fcdeb8594a",
+      "regularprice": "4500000",
+      "saleprice": "5899000",
+      "desc": "The Air Jordan 1 Red Mid brings full-court style and premium comfort to an iconic look. Its Air-Sole unit cushions play on the hardwood, while the padded collar gives you a supportive feel."
+    },
+    {
+      "id": "zcgxp0x6f",
+      "name": "Jordan 1 Santin Red",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "false",
+      "categoryId": "5h0nd035f",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faj1.jpg?alt=media&token=e528d791-beab-4d66-8e27-97dd48d9dafc",
+      "regularprice": "2000000",
+      "saleprice": "258899000",
+      "desc": "The Air Jordan 1 Mid Older Kids' Shoe brings full-court style and premium comfort with an iconic look. A comfortable upper combines with time-tested cushioning for street-ready style on and off the court."
+    },
+    {
+      "id": "lx0aenbnw",
+      "name": "Nike Romaleos 4 SE",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "u80s7pb6z",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Fromaleos-4-se-training-shoe-PkJN5G.jpg?alt=media&token=31bd102e-ca0f-4eca-9671-8e55815decf5",
+      "regularprice": "4000000",
+      "saleprice": "5899000",
+      "desc": "Strong and stable, the Nike Romaleos 4 SE features a wide, stable base and supportive cushioning for your toughest weight training and HIIT sessions. Adjustable straps secure your foot to keep you locked in and ready to go."
+    },
+    {
+      "id": "rb31ni2oy",
+      "name": "Nike Air Max 90 FlyEase",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "u80s7pb6z",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Fair-max-90-flyease-shoe-4QVLlc.jpg?alt=media&token=efa2b0c2-7827-449b-a1b4-4c2044559efe",
+      "regularprice": "2000000",
+      "saleprice": "3599000",
+      "desc": "Nike Sportswear's first collaboration by the Hatfield brothers, the Nike Air Max 90 FlyEase combines the timelessness of Tinker's original design with Tobie's FlyEase technology. The heel collapses when you step in then snaps back into place, providing quick, easy access to one of history's most iconic sneakers."
+    },
+    {
+      "id": "mzrc62jcr",
+      "name": "Nike Mercurial Superfly 7 Pro FG",
+      "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
+      "status": "true",
+      "categoryId": "2ok8c5nkh",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Fmercurial-superfly-7-pro-fg-football-boot-wjHPL4.jpg?alt=media&token=1c52d19b-48e0-441a-9f89-444742d8cd0d",
+      "regularprice": "3000000",
+      "saleprice": "4389000",
+      "desc": "Building on the 360-degree Flyknit innovation of the 6, the Nike Mercurial Superfly 7 Pro FG Boot adds a Nike Aerotrak zone that grips the turf to help supercharge the traction."
+    }
+  ],
+  "posts": [],
+  "categorys": [
+    {
+      "id": "e939q2hec",
+      "namedm": "Dance",
+      "mota": "Giày nhảy"
+    },
+    {
+      "id": "5h0nd035f",
+      "namedm": "Basketball",
+      "mota": "Giày chơi bóng rổ"
+    },
+    {
+      "id": "u80s7pb6z",
+      "namedm": "Running",
+      "mota": "Giày chạy"
+    },
+    {
+      "id": "2ok8c5nkh",
+      "namedm": "Football",
+      "mota": "Giày đá bóng"
+    }
+  ],
+  "users": []
+}
