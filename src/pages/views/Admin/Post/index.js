@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-const Post = ({ posts, onRemove }) => {
-    // const removeHandlePost = (id) => {
-    //     onRemove(id)
+const Post = ({ posts, onRemoveP }) => {
+    const removeHandlePost = (id) => {
+        onRemoveP(id)
 
-    // }
+    }
     return (
         <div>
             <div>
@@ -15,7 +16,7 @@ const Post = ({ posts, onRemove }) => {
                 </h1><br />
 
                 </div>
-                {/* <Link className="btn btn-danger" to="/admin/product/add">Danh mục</Link><hr /> */}
+                <Link className="btn btn-danger" to="/admin/post/add">Thêm bài viết</Link><hr />
 
                 <div>
                     <div className="card shadow mb-4">
@@ -34,16 +35,14 @@ const Post = ({ posts, onRemove }) => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {posts.map(({ id, name, noidung }, index) => (
+                                        {posts.map(({ id, name, image, noidung }, index) => (
                                             <tr key={index}>
                                                 <th scope="row">{index + 1}</th>
                                                 <td>{name}</td>
+                                                <td><img src={image} alt="" width="50" /></td>
                                                 <td>{noidung}</td>
                                                 <td>
-                                                    <button className="btn btn-danger">Xóa</button>
-                                                    {/* <button className="btn btn-danger" onClick={() => removeHandle(id)}>Xóa</button>&nbsp;
-                                                <Link className="btn btn-primary" to={`/admin/edit/${id}`}>Sửa</Link>&nbsp;
-                                                <Link className="btn btn-dark" to={`/admin/detail/${id}`}>Chi tiết</Link> */}
+                                                    <button className="btn btn-danger" onClick={() => removeHandlePost(id)}>Xóa</button>
                                                 </td>
                                             </tr>
                                         ))}

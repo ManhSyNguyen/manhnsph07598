@@ -4,9 +4,9 @@
       "id": "tdwimzzil",
       "name": "Nike Air Force 1",
       "ndngan": "Thiết kế thời trang, kiểu dáng phong cách",
-      "status": "true",
+      "status": "false",
       "categoryId": "e939q2hec",
-      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faf12.jpg?alt=media&token=7c20044b-2501-417b-bec8-838f734fbad7",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/images%2Faf12.jpg?alt=media&token=a705bacf-f750-4410-aec9-02c09eaffc1f",
       "regularprice": "1500000",
       "saleprice": "2699000",
       "desc": "The legend lives on in the Nike Air Force 1 Craft&mdash;a modern take on the iconic AF-1 with new details like fresh graphics on the tongue and heel. Crisp leather, brushed suede and exposed stitching on the upper add texture and depth while the new plush liner feels soft and comfortable. Its redesigned shape returns to OG roots, adding heritage style."
@@ -100,7 +100,20 @@
       "desc": "Building on the 360-degree Flyknit innovation of the 6, the Nike Mercurial Superfly 7 Pro FG Boot adds a Nike Aerotrak zone that grips the turf to help supercharge the traction."
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "id": "4ufoitwnl",
+      "name": "Nike tiếp tục 'bắt tay' Off-White ra mắt giày Air Force 1 màu nổi",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/imagesPost%2FOFFWHITE.jpg?alt=media&token=e3d38265-5350-4992-bfe3-db26a3949e54",
+      "noidung": "Tín đồ yêu thích dòng giày Air Force 1 hiện tỏ ra thích thú trước những phối màu đặc biệt khi kết hợp cùng hãng Off-White. Nike Air Force là dòng giày thể thao được sản xuất bởi thương hiệu thời trang Nike bao gồm series: Air Force 1, Air Force 2, Air Force 3, Air Force STS, Air Force 5, Air Force XXV và Air Force 09. Tuy nhiên, trải qua nhiều năm hình thành và phát triển, Nike Air Force 1 vẫn luôn là \"tượng đài\" trong cộng đồng yêu giày.  Mang nhiều nét đặc trưng của Air Force 1 Low, \"ông hoàng\" thời trang streetwear Virgil Abloh đem tới sự bứt phá về phối màu và những biểu tượng đặc trưng của Off-White.  Mới đây, cả hai tiếp tục \"bắt tay\" cùng nhau với 2 phiên bản mới mang tên University Gold và Metallic Silver. Mức giá dự kiến cho mỗi sản phẩm khoảng 150 USD và ra mắt trong năm 2021."
+    },
+    {
+      "id": "rjpn59nlo",
+      "name": "Nike Air Force 1 x PEACEMINUSONE Para-noise",
+      "image": "https://firebasestorage.googleapis.com/v0/b/manhnsph07598.appspot.com/o/imagesPost%2Fg-dragon-nike-air-force-1-release-date-1-2.jpg?alt=media&token=6b2eaf2e-57f4-4cf6-ac55-84946324869b",
+      "noidung": "Sau thời gian chờ đợi, cuối cùng các tín đồ sneakers cũng có thể sở hữu cho mình đôi giày đang được quan tâm nhất thời điểm hiện tại Nike Air Force 1 x PEACEMINUSONE Para-noise vào hôm nay.   Theo thông tin hãng đưa ra, ngày 23/11 sẽ bắt đầu mở bán 2 phiên bản Para-noise có dấu swoosh đỏ (dành riêng cho thị trường Hàn Quốc) và dấu swoosh trắng (quốc tế).  Từ vài ngày trước, nhiều dân mạng đã chia sẻ thông tin Nike sẽ bán đôi giày mang thương hiệu G-Dragon tại thị trường Việt Nam với giá hơn 5,8 triệu đồng vào lúc 9h sáng ngày 23/11 trên trang web của hãng. Vì thế, một số bạn trẻ đã có sự chuẩn bị từ trước, sẵn sàng săn đôi giày ưng ý. "
+    }
+  ],
   "categorys": [
     {
       "id": "e939q2hec",

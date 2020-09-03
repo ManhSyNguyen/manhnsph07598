@@ -1,46 +1,56 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const Dashboard = ({ products, categorys }) => {
+const Dashboard = ({ products, categorys, posts }) => {
 
     return (
         <div>
+
+
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
                     <h6 className="m-0 font-weight-bold text-primary">Dashboard</h6>
 
                 </div><br />
+                <div className="content">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
+                                <div className="card card-stats">
+                                    <div className="card-header card-header-warning card-header-icon">
+                                        <p className="card-category">PRODUCT </p>
+                                        <h3 className="card-title">Số Lượng : {products.length}
+                                        </h3>
+                                    </div>
+                                    <div className="card-footer">
 
-                <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-success shadow h-100 py-2">
-                        <div className="card-body">
-                            <div className="row no-gutters align-items-center">
-                                <div className="col mr-2">
-                                    <h2><strong style={{ color: "#049249" }}>Product :</strong></h2>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">Số lượng : {products.length}</div>
+                                    </div>
                                 </div>
-                                <div className="col-auto">
-                                    <i className="fas fa-dollar-sign fa-2x text-gray-300" />
-                                </div>
-
                             </div>
+                            <div className="col-lg-3 col-md-6 col-sm-6">
+                                <div className="card card-stats">
+                                    <div className="card-header card-header-success card-header-icon">
+                                        <p className="card-category">CATEGORYS</p>
+                                        <h3 className="card-title">Số lượng : {categorys.length}</h3>
+                                    </div>
+                                    <div className="card-footer">
 
-                        </div>
-                    </div>
-                </div>
-
-                <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-success shadow h-100 py-2">
-                        <div className="card-body">
-                            <div className="row no-gutters align-items-center">
-                                <div className="col mr-2">
-                                    <h2><strong style={{ color: "#049249" }}>Category :</strong></h2>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">Số lượng : {categorys.length}</div>
+                                    </div>
                                 </div>
-                                <div className="col-auto">
-                                    <i className="fas fa-dollar-sign fa-2x text-gray-300" />
-                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-sm-6">
+                                <div className="card card-stats">
+                                    <div className="card-header card-header-danger card-header-icon">
 
+                                        <p className="card-category">POST</p>
+                                        <h3 className="card-title">Số lượng : {posts.length}</h3>
+                                    </div>
+                                    <div className="card-footer">
+
+                                    </div>
+
+                                </div>
+                                <br />
                             </div>
 
                         </div>
@@ -48,8 +58,6 @@ const Dashboard = ({ products, categorys }) => {
                 </div>
 
             </div>
-
-
         </div>
     )
 }

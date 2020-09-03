@@ -46,7 +46,7 @@ const Header = props => {
                             <li><Link className="color4" to="/about">SẢN PHẨM</Link></li>
                             <li><Link className="color1" to="/gioithieu">GIỚI THIỆU</Link></li>
                             <li><Link className="color6" to="/lienhe">LIÊN HỆ</Link></li>
-                            <li><Link className="color6" to="#">BÀI VIẾT</Link></li>
+                            <li><Link className="color6" to="/baiviet">BÀI VIẾT</Link></li>
                         </ul>
                     </div>
                     <div className="clearfix"> </div>

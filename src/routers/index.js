@@ -8,6 +8,10 @@ import ProductsManager from '../pages/views/Admin/Products'
 import DetailProduct from '../pages/views/Admin/DetailProduct';
 import AddProduct from '../pages/views/Admin/AddProduct';
 import Category from '../pages/views/Admin/Category';
+import Post from '../pages/views/Admin/Post';
+import AddCategory from '../pages/views/Admin/AddCategory';
+import Categorys from '../pages/views/Main/Categorys';
+import AddPost from '../pages/views/Admin/AddPost';
 //Views
 import About from '../pages/views/Main/About'
 import Home from '../pages/views/Main/Home'
@@ -16,15 +20,9 @@ import Contact from '../pages/views/Main/Contact';
 import EditProduct from '../pages/views/Admin/EditProduct';
 
 import ProductDetail from '../pages/views/Main/ProductDetail';
-import Post from '../pages/views/Admin/Post';
-import AddCategory from '../pages/views/Admin/AddCategory';
-import Categorys from '../pages/views/Main/Categorys';
+import Postt from '../pages/views/Main/Post';
 
-
-
-
-
-const Routers = ({ products, onRemove, onAdd, onUpdate, posts, categorys, onRemovect, onAddCt }) => {
+const Routers = ({ products, onRemove, onAdd, onUpdate, posts, onRemoveP, onAddP, categorys, onRemovect, onAddCt }) => {
     const onHandleRemove = (id) => {
         onRemove(id)
     }
@@ -40,11 +38,12 @@ const Routers = ({ products, onRemove, onAdd, onUpdate, posts, categorys, onRemo
     return (
         <Router>
             <Switch>
-                <Route path="/admin/:path?/:path?" exact>
+                <Route path="/admin/:path?/:path?/:path?" exact>
                     <LayoutAdmin>
                         <Switch>
+                            {/* product */}
                             <Route path='/admin' exact>
-                                <Dashboard products={products} categorys={categorys} />
+                                <Dashboard products={products} categorys={categorys} posts={posts} />
                             </Route>
                             <Route path='/admin/products'>
                                 <ProductsManager products={products} categorys={categorys} onRemove={onHandleRemove} />
@@ -60,7 +59,10 @@ const Routers = ({ products, onRemove, onAdd, onUpdate, posts, categorys, onRemo
                             </Route>
                             {/* post */}
                             <Route path='/admin/posts'>
-                                <Post posts={posts} />
+                                <Post posts={posts} onRemoveP={onRemoveP} />
+                            </Route>
+                            <Route path='/admin/post/add'>
+                                <AddPost onAddP={onAddP} />
                             </Route>
                             {/* category */}
                             <Route path='/admin/categorys'>
@@ -94,6 +96,9 @@ const Routers = ({ products, onRemove, onAdd, onUpdate, posts, categorys, onRemo
                             </Route>
                             <Route path="/cate/:id">
                                 <Categorys categorys={categorys} products={products} />
+                            </Route>
+                            <Route path="/baiviet">
+                                <Postt posts={posts} />
                             </Route>
                         </Switch>
                     </LayoutMain>

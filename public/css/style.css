@@ -727,7 +727,7 @@ ul.social li i:hover{
 }
 .blog-poast-info ul li a:hover {
 	text-decoration:none;
-	color:#EF5F21;
+	color:#474747;
 }
 .blog-poast-info ul li  i {
 	width: 20px;
@@ -748,20 +748,22 @@ ul.social li i:hover{
 }
 .grid_3 p {
 	color: #626262;
-	font-size: 1em;
+	font-size: 1.3em;
 	line-height:1.5em;
 }
 .grid_3 h3{
 	text-transform:uppercase;
-	font-size:1.2em;
+	font-size:1.4em;
 	margin-bottom:1em;
+	color: #000;
 }
 .grid_3 h3 a{
 	color:#000;
 	text-decoration: none;
 }
 .grid_3 h3 a:hover {
-  color: #EF5F21;
+  color: #5c5c5c;
+  text-decoration: none;
 }
 .button {
 	margin-top: 20px;
@@ -770,15 +772,14 @@ ul.social li i:hover{
 	color:#fff;
 	font-size: 1em;
 	text-transform: uppercase;
-	background: #EF5F21;
+	background: #000000;
 	padding: 0.4em 1em;
 	text-decoration: none;
-		text-decoration:none;
 }
 .button a:hover{
 
 	color:#fff;
-	background: #000;
+	background: rgb(83, 83, 83);
 	
 }
 .grid_3{
@@ -804,7 +805,7 @@ p.m_11 {
     margin: 0 0 1em;
 }
 /*--//blog--*/
-/*--product--*/
+/*--product--*/ 
 .tags ul li {
 	display: inline-block;
 	float:left;

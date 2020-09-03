@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { Link, useParams } from 'react-router-dom'
 
 const About = ({ products, categorys }) => {
-    // const { id } = useParams()
-    // const product = products.filter(product => product.categoryId === id)
     return (
         <div>
             <div className="product">
@@ -15,11 +13,19 @@ const About = ({ products, categorys }) => {
                                 <h3 className="cate">Categories</h3>
                             </div>
                             <ul className="menu">
-                                <li className="item1"> {categorys.map(({ id, namedm, mota }) => (
-                                    <div className="size__list color__list">
-                                        <h5 className="card-title"><Link to={"/cate/" + id}>{namedm}</Link></h5>
-                                    </div>
-                                ))}
+                                <li className="item1">
+                                    <h5 className="card-title">
+                                        <Link to={"/about"}>All</Link>
+                                    </h5>
+                                    {categorys.map(({ id, namedm }) => (
+                                        <div className="size__list color__list">
+                                            <h5 className="card-title">
+                                                <Link to={"/cate/" + id}>{namedm}</Link>
+                                            </h5>
+
+                                        </div>
+                                    ))}
+
                                 </li>
 
                             </ul>
@@ -29,7 +35,7 @@ const About = ({ products, categorys }) => {
                         <div className="product-middle">
                             <div className="fit-top">
                                 <h6 className="shop-top">New products</h6>
-                                <Link to="/about" className="shop-now">SHOP NOW</Link>
+                                <Link to="/" className="shop-now">SHOP NOW</Link>
                                 <div className="clearfix"> </div>
                             </div>
                         </div>
@@ -107,7 +113,7 @@ const About = ({ products, categorys }) => {
                                     </div>
                                     <p className="tun">{sh.name}</p>
                                     <a href="#" className="item_add">
-                                        <p className="number item_price"><i> </i>{sh.saleprice} vnđ</p>
+                                        <p className="number item_price"><i> </i>{sh.regularprice} vnđ</p>
                                     </a>
                                 </div>
 

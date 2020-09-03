@@ -4,7 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import apiRequest from '../../../../api/productApi'
 import firebase from '../../../../firebase'
-const EditProduct = ({ products, onUpdate, categorys }) => {
+const EditProduct = ({ onUpdate, categorys }) => {
     let { id } = useParams();
     let history = useHistory();
     const [editProduct, setEditProduct] = useState({});
@@ -14,7 +14,6 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
         const getProduct = async () => {
             try {
                 const { data } = await apiRequest.get(id);
-                console.log(data)
                 setEditProduct(data);
             } catch (error) {
 
@@ -38,16 +37,10 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
                 }
                 //     e.preventDefault();
                 onUpdate(newData);
-                // đẩy dữ liệu ra ngoài app.js thông qua props onAdd
+                console.log(newData)
                 history.push("/admin/products");
             })
         });
-
-        // console.log(data)
-        // e.preventDefault();
-
-        console.log(editProduct)
-        history.push('/admin/products');
     }
 
 
@@ -68,28 +61,38 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
                                 defaultValue={editProduct.name}
                                 name="name"
                                 ref={register({ required: true, pattern: /^[A-Z a-z0-9]*$/ })} />
-                            {errors.name && errors.name.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
-                            {errors.name && errors.name.type === "minLength" && <span style={{ color: "red" }}>Giá trị phải lớn hơn 5 kí tự</span>}
-                            {errors.name && errors.name.type === "pattern" && <span style={{ color: "red" }}>Không chứa kí tự đặc biệt</span>}
+                            {errors.name && errors.name.type === "required"
+                                && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
+                            {errors.name && errors.name.type === "minLength"
+                                && <span style={{ color: "red" }}>Giá trị phải lớn hơn 5 kí tự</span>}
+                            {errors.name && errors.name.type === "pattern"
+                                && <span style={{ color: "red" }}>Không chứa kí tự đặc biệt</span>}
                         </div>
                         <div>
-                            <label htmlFor="InputProductName">Nội dung ngắn</label><span style={{ color: 'red' }}>*</span>
-                            <input type="text" className="form-control" defaultValue={editProduct.ndngan} id="InputProductName" name="ndngan"
+                            <label htmlFor="InputProductName">Nội dung ngắn</label>
+                            <span style={{ color: 'red' }}>*</span>
+                            <input type="text" className="form-control"
+                                defaultValue={editProduct.ndngan} id="InputProductName" name="ndngan"
                                 ref={register({ required: true, minLength: 5, pattern: /[A-Z a-z0-9]/ })} />
-                            {errors.ndngan && errors.ndngan.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
-                            {errors.ndngan && errors.ndngan.type === "minLength" && <span style={{ color: "red" }}>Giá trị phải lớn hơn 5 kí tự</span>}
-                            {errors.ndngan && errors.ndngan.type === "pattern" && <span style={{ color: "red" }}>Không chứa kí tự đặc biệt</span>}
+                            {errors.ndngan && errors.ndngan.type === "required"
+                                && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
+                            {errors.ndngan && errors.ndngan.type === "minLength"
+                                && <span style={{ color: "red" }}>Giá trị phải lớn hơn 5 kí tự</span>}
+                            {errors.ndngan && errors.ndngan.type === "pattern"
+                                && <span style={{ color: "red" }}>Không chứa kí tự đặc biệt</span>}
                         </div>
                         <div className="form-group">
                             <label htmlFor="InputProductStatus">Tình trạng</label>
                             <span style={{ color: 'red' }}>*</span>
                             <select className="form-control form-control"
-                                name="status" ref={register({ required: true })} defaultValue={editProduct.status} >
+                                name="status" ref={register({ required: true })}
+                                defaultValue={editProduct.status} >
                                 <option value="">----Không thuộc mục nào----</option>
                                 <option>true</option>
                                 <option>false</option>
                             </select>
-                            {errors.status && errors.status.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
+                            {errors.status && errors.status.type === "required"
+                                && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
                         </div>
                         <div className="control">
                             <select
@@ -108,12 +111,7 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
                                 ))}
                             </select>
                         </div>
-                        {/* <div className="form-group">
-                            <label htmlFor="InputProductImage">Ảnh</label><span style={{ color: 'red' }}>*</span>
-                            <input type="text" className="form-control" id="InputProductName" name="image"
-                                ref={register({ required: true })} value={editProduct.image} />
-                            {errors.image && errors.image.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
-                        </div> */}
+
                         <div className="form-group">
                             <label htmlFor="productPrice">Ảnh sản phẩm</label>
                             <div className="input-group">
@@ -137,8 +135,10 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
                                 name="regularprice"
                                 ref={register({ required: true, min: 0, pattern: /[-+]?[0-9]*[.,]?[0-9]+/ })}
                                 defaultValue={editProduct.regularprice} />
-                            {errors.regularprice && errors.regularprice.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
-                            {errors.regularprice && errors.regularprice.type === "min" && <span style={{ color: "red" }} >Sai định dạng</span>}
+                            {errors.regularprice && errors.regularprice.type === "required"
+                                && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
+                            {errors.regularprice && errors.regularprice.type === "min"
+                                && <span style={{ color: "red" }} >Sai định dạng</span>}
                         </div>
                         <div className="form-group">
                             <label htmlFor="InputProductPrice">Giá bán</label>
@@ -149,8 +149,10 @@ const EditProduct = ({ products, onUpdate, categorys }) => {
                                 name="saleprice"
                                 ref={register({ required: true, min: 0, pattern: /[-+]?[0-9]*[.,]?[0-9]+/ })}
                                 defaultValue={editProduct.saleprice} />
-                            {errors.saleprice && errors.saleprice.type === "required" && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
-                            {errors.saleprice && errors.saleprice.type === "min" && <span style={{ color: "red" }} >Sai định dạng</span>}
+                            {errors.saleprice && errors.saleprice.type === "required"
+                                && <span style={{ color: "red" }}>Vui lòng không để trống</span>}
+                            {errors.saleprice && errors.saleprice.type === "min"
+                                && <span style={{ color: "red" }} >Sai định dạng</span>}
                         </div>
 
                         <button className="btn btn-primary">Cập nhật</button>
